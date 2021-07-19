@@ -7,21 +7,107 @@
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <title>AkrisMed - Rehabilitacja, Masaże</title>
-    <link rel="stylesheet" id="akrismed-fonts-css" href="./assets/css/fonts.css" type="text/css">
+    <link rel="stylesheet" id="akrismed-fonts-css" href="./assets/css/font-nunito.css" type="text/css">
+    <link rel="stylesheet" id="akrismed-fonts-css" href="./assets/css/font-open-sans.css" type="text/css">
     <link rel="stylesheet" id="fontawesome5-css" href="./assets/icons/fontawesome/css/all.min.css" type="text/css">
     <link rel="stylesheet" id="bootstrap5-css" href="./assets/css/bootstrap.css" type="text/css">
     <link rel="stylesheet" id="akrismed-style-css" href="./style.css" type="text/css">
 </head>
-<body>
-    <h1>AkrisMed.pl <i class="fas fa-fish"></i></h1>
-    <h2>AkrisMed.pl <i class="fas fa-fish"></i></h2>
-    <h3>AkrisMed.pl <i class="fas fa-fish"></i></h3>
-    <h4>AkrisMed.pl <i class="fas fa-fish"></i></h4>
-    <h5>AkrisMed.pl <i class="fas fa-fish"></i></h5>
-    <h6>AkrisMed.pl <i class="fas fa-fish"></i></h6>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt quibusdam voluptate ipsa error accusamus officiis, iste enim ut. Molestiae delectus <a href="https://akrismed.pl">AkrisMed.pl</a> <i class="fas fa-fish"></i> minus maiores suscipit quisquam debitis cupiditate sed id officiis itaque.
-    </p>
+<body class="home sticky-navigation">
+    <main class="main">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-topbar"></div>
+            <div class="header-wrapper">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                    <div class="container">
+                        <a class="navbar-brand" href="http://localhost/akrismed.pl/www/wp-content/themes/akrismed/template.html">
+                            <img src="http://localhost/akrismed.pl/www/wp-content/themes/akrismed/assets/images/akrismed-full-logo-413-x100.png" alt="AkrisMed, strona startowa">
+                        </a>
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Przełącz nawigację">
+                            <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Usługi</a>
+                                    <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                        <li>
+                                            <a href="#" class="dropdown-item">Fizykoterapia</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown-item">Terapia masażem</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown-item">Terapia chiropraktyczna</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">O nas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Kontakt</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="header-widgets">
+                <div class="container">
+                    <h1>AkrisMed.pl <i class="fas fa-fish"></i></h1>
+                </div>
+            </div>
+        </header><!-- /Header -->
+
+        <div id="akrismedCarousel" class="akrismed-carousel carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/images/slide-01-bas-peperzak-J1trUf0Lj3Q-unsplash.jpg" class="d-block w-100" alt="AkrisMed - Rehabilitacja, Masaże">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Fizykoterapia</h3>
+                        <p>Fizjoterapia jest jedną z głównych oferowanych przez nas usług.</p>
+                    </div>
+                    <div class="carousel-caption-md d-md-none px-3 py-2">
+                        <h3>Fizykoterapia</h3>
+                        <p>Fizjoterapia jest jedną z głównych oferowanych przez nas usług.</p>
+                    </div>
+                </div>
+                <!-- <div class="carousel-item">
+                    <img src="./assets/images/slide-02-mr-lee-f4RBYsY2hxA-unsplash.jpg" class="d-block w-100" alt="AkrisMed - Rehabilitacja, Masaże">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/slide-03-pexels-karolina-grabowska-4506109.jpg" class="d-block w-100" alt="AkrisMed - Rehabilitacja, Masaże">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/slide-04-pexels-karolina-grabowska-4506217.jpg" class="d-block w-100" alt="AkrisMed - Rehabilitacja, Masaże">
+                </div> -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#akrismedCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Poprzedni</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#akrismedCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Następny</span>
+            </button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <h6>AkrisMed.pl <i class="fas fa-fish"></i></h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt quibusdam voluptate ipsa error accusamus officiis, iste enim ut. Molestiae delectus <a class="text-link" href="https://akrismed.pl">AkrisMed.pl</a> <i class="fas fa-fish"></i> minus maiores suscipit quisquam debitis cupiditate sed id officiis itaque.</p>
+            </div>
+        </footer><!-- /Footer -->
+
+    </main>
 
     <script type="text/javascript" src="./assets/js/bootstrap.bundle.js" id="bootstrap5-bundle-js"></script>
 </body>
