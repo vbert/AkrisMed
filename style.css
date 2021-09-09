@@ -40,8 +40,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 # 01 - Variables
 --------------------------------------------------------------*/
 :root {
-    --am-text-light: #fff;
+    --am-bg-gray-light: #f5f8fb;
     --am-bg-light: #fff;
+    --am-text-light: #fff;
     --am-blue: #1d71ba;
     --am-red: #c76366;
     --am-gray: #777;
@@ -112,6 +113,16 @@ img {
 
 iframe {
     max-width: 100%;
+}
+
+.content-section {
+    margin-bottom: 4rem;
+}
+
+.section-gray {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: var(--am-bg-gray-light);
 }
 
 /*--------------------------------------------------------------
@@ -191,17 +202,62 @@ a[href^="tel"] {
 /*--------------------------------------------------------------
 # 06 - Buttons
 --------------------------------------------------------------*/
+.btn-primary {
+    color: #fff;
+    background-color: var(--am-primary);
+    border-color: var(--am-primary);
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: var(--am-primary-hover);
+    border-color: #ad373b;
+}
+.btn-check:focus + .btn-primary, .btn-primary:focus {
+    color: #fff;
+    background-color: var(--am-primary-hover);
+    border-color: #ad373b;
+    box-shadow: 0 0 0 0.25rem rgba(173, 55, 59, 0.5);
+}
+.btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #ad373b;
+    border-color: #943033;
+}
+.btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgba(173, 55, 59, 0.5);
+}
+.btn-secondary {
+    color: #fff;
+    background-color: var(--am-secondary);
+    border-color: var(--am-secondary);
+}
+.btn-secondary:hover {
+    color: #fff;
+    background-color: var(--am-secondary-hover);
+    border-color: var(--am-secondary-hover);
+}
+.btn-check:focus + .btn-secondary, .btn-secondary:focus {
+    color: #fff;
+    background-color: var(--am-secondary-hover);
+    border-color: var(--am-secondary-hover);
+    box-shadow: 0 0 0 0.25rem rgba(27, 102, 182, 0.5);
+}
+.btn-check:checked + .btn-secondary, .btn-check:active + .btn-secondary, .btn-secondary:active, .btn-secondary.active, .show > .btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #1b5ca1;
+    border-color: #1a5594;
+    color: rgb(26, 85, 148);
+}
+.btn-check:checked + .btn-secondary:focus, .btn-check:active + .btn-secondary:focus, .btn-secondary:active:focus, .btn-secondary.active:focus, .show > .btn-secondary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgba(26, 85, 148, 0.5);
+}
 
 /*--------------------------------------------------------------
 # 07 - Forms
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
-# 08 - Topbar navigation
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# 09 - Header
+# 08 - Header
 --------------------------------------------------------------*/
 .header {
     position: relative;
@@ -308,7 +364,11 @@ body.home .header {
 }
 
 /*--------------------------------------------------------------
-# 10 - Navigation
+# 09 - Topbar navigation
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# 10 - Main Navigation
 --------------------------------------------------------------*/
 .header-wrapper .navbar {
     padding: 0;
@@ -605,3 +665,92 @@ body.home .header {
         align-items: flex-start;
     }
 }
+
+/*--------------------------------------------------------------
+# 15 - (Custom) Theme Widgets
+--------------------------------------------------------------*/
+.content-section {
+    margin-bottom: 4rem;
+}
+
+.content-section .card {
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0;
+}
+
+.content-section .card .card-body {
+    padding-top: 0;
+}
+
+.content-section .card-img-top {
+    margin-bottom: 1rem;
+}
+
+.content-section .card-title {
+    margin-bottom: .6rem;
+}
+
+.content-section .title-card .card-title {
+    margin-bottom: 1.6rem;
+    font-size: 2.4rem;
+}
+
+.content-section .card-text {
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .content-section .card {
+        margin-bottom: 0;
+    }
+}
+
+.content-section .widget-title {
+    font-size: 2.4rem;
+}
+
+.content-section.section-gray .card {
+    background-color: transparent;
+}
+
+.content-section.section-gray .card .card-body {
+    padding-bottom: 0;
+}
+
+/*.header-widgets .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+@media (min-width: 992px) {
+    .header-widgets {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.84);
+        z-index: 10;
+    }
+    .header-widgets .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.header-widgets .widget {
+    padding: 1.34rem 0;
+    border-bottom: 1px solid rgba(50, 50, 50, 0.1);
+}
+.header-widgets .widget:last-of-type {
+    border-bottom: none;
+}
+@media (min-width: 992px) {
+    .header-widgets .widget {
+        padding: 2rem 0;
+        width: auto;
+        border-bottom: none;
+    }
+}
+@media (min-width: 1200px) {
+    .header-widgets .widget {
+    }
+}
+*/
