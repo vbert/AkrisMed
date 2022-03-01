@@ -432,6 +432,12 @@ body.home .header {
     }
 }
 
+.navbar.fixed-top {
+    --bs-bg-opacity: .85;
+    background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+    box-shadow: 0 2px 4px rgba(50, 50, 50, 0.2);
+}
+
 .navbar-light .navbar-nav .nav-link {
     background-color: transparent;
     color: var(--am-gray);
