@@ -319,14 +319,13 @@ body.home .header {
         width: auto;
         border-bottom: none;
     }
-    .header-widgets .widget:last-of-type {
-        /* margin-right: none; */
-    }
+    /* .header-widgets .widget:last-of-type {
+        margin-right: none;
+    } */
 }
 @media (min-width: 1200px) {
-    .header-widgets .widget {
-        /*  */
-    }
+    /* .header-widgets .widget {
+    } */
 }
 
 .header-widgets .icon-box {
