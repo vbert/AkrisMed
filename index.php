@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-<h1>get_stylesheet_directory_uri: <small><?php echo get_stylesheet_directory_uri(); ?></small></h1>
+<p>get_stylesheet_directory_uri: <small><?php echo get_stylesheet_directory_uri(); ?></small></p>
 
 <?php
 get_footer();
